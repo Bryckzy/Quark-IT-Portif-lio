@@ -22,7 +22,7 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme }) => {
       setScrolled(window.scrollY > 10);
 
       // Active section highlighting
-      const sections = ['home', 'about', 'results', 'portfolio', 'services', 'testimonials', 'contact'];
+      const sections = ['home', 'about', 'results', 'portfolio', 'services', 'contact'];
       let currentSection = '';
 
       for (const sectionId of sections) {
@@ -52,7 +52,7 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme }) => {
     { id: 'results', label: 'Resultados' },
     { id: 'portfolio', label: 'Portfólio' },
     { id: 'services', label: 'Serviços' },
-    { id: 'testimonials', label: 'Depoimentos' },
+    // { id: 'testimonials', label: 'Depoimentos' },
     { id: 'contact', label: 'Contato' },
   ];
 

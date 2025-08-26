@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
     { id: 'results', label: 'Resultados' },
     { id: 'portfolio', label: 'Portfólio' },
     { id: 'services', label: 'Serviços' },
-    { id: 'testimonials', label: 'Depoimentos' },
+    // { id: 'testimonials', label: 'Depoimentos' },
   ];
 
   const scrollToSection = (id: string) => {
