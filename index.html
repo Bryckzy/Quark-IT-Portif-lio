@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='0 0 200 200' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='grad1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%233b82f6;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23ec4899;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cellipse cx='100' cy='100' rx='90' ry='40' stroke='url(%23grad1)' stroke-width='10' /%3E%3Cellipse cx='100' cy='100' rx='90' ry='40' transform='rotate(60 100 100)' stroke='url(%23grad1)' stroke-width='10' /%3E%3Cellipse cx='100' cy='100' rx='90' ry='40' transform='rotate(120 100 100)' stroke='url(%23grad1)' stroke-width='10' /%3E%3Ccircle cx='100' cy='100' r='25' fill='url(%23grad1)' /%3E%3C/svg%3E" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quark IT - Portfólio Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'quark-blue': '#3b82f6',
+              'quark-pink': '#ec4899',
+              // Light Theme
+              'light-bg': '#fafaf9', // off-white (stone-50)
+              'light-surface': '#ffffff',
+              'light-text-primary': '#1e293b', // slate-800
+              'light-text-secondary': '#64748b', // slate-500
+              'light-border': '#e2e8f0', // slate-200
+              // Dark Theme
+              'dark-bg': '#0f172a', // slate-900
+              'dark-surface': '#1e293b', // slate-800
+              'dark-text-primary': '#f1f5f9', // slate-100
+              'dark-text-secondary': '#94a3b8', // slate-400
+              'dark-border': '#334155', // slate-700
+            },
+            animation: {
+                'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                'scroll': 'scroll 50s linear infinite',
+            },
+            keyframes: {
+                fadeInUp: {
+                    '0%': { opacity: '0', transform: 'translateY(20px)' },
+                    '100%': { opacity: '1', transform: 'translateY(0)' },
+                },
+                scroll: {
+                  to: { transform: 'translateX(-50%)' },
+                }
+            },
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
